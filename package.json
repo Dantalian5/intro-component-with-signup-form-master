@@ -1,7 +1,7 @@
 {
-	"name": "project-name",
+	"name": "intro-component-with-signup-form-master",
 	"version": "1.0.0",
-	"description": "This is a basic html nodejs boilerplate",
+	"description": "frontendmentor.io",
 	"source": "src/index.html",
 	"scripts": {
 		"dev": "parcel",
@@ -12,6 +12,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@parcel/transformer-sass": "^2.9.3",
 		"parcel": "^2.9.3",
 		"parcel-namer-custom": "^0.2.0",
 		"rimraf": "^5.0.1",
