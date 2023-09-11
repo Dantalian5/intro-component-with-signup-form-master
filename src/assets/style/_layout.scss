@@ -1,0 +1,23 @@
+.container {
+	min-width: 18.75rem;
+	padding-inline: 1.5rem;
+	padding-block: 5.5rem 4.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	&__top {
+		flex: 1 1 300px;
+	}
+	&__bottom {
+		flex: 1 1 300px;
+	}
+	&__title {
+		margin-bottom: 1rem;
+	}
+	&__text {
+		margin-bottom: 2rem;
+	}
+	&__cta {
+		margin-bottom: 1.5rem;
+	}
+}

@@ -2,12 +2,10 @@
 	"name": "intro-component-with-signup-form-master",
 	"version": "1.0.0",
 	"description": "frontendmentor.io",
-	"source": "src/index.html",
+	"main": "index.js",
 	"scripts": {
-		"dev": "parcel",
-		"build": "parcel build --no-source-maps --no-content-hash --public-url ./ --dist-dir public",
-		"clean-public": "rimraf public",
-		"clean-parcel": "rimraf .parcel-cache dist"
+		"dev": "parcel src/index.html",
+		"build": "parcel build --no-source-maps --no-content-hash --public-url ./ --dist-dir public"
 	},
 	"author": "",
 	"license": "ISC",
