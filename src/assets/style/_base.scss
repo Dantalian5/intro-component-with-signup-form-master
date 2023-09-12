@@ -12,6 +12,11 @@ body {
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
-	background: url(../images/bg-intro-mobile.png);
-	background-color: #ff7979;
+	background: url(../images/bg-intro-mobile.png), #ff7979;
+}
+
+@media (min-width: 800px) {
+	body {
+		background: url(../images/bg-intro-desktop.png), #ff7979;
+	}
 }
