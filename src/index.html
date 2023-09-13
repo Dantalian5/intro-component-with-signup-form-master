@@ -44,36 +44,48 @@
 					Try it free 7 days <span>then $20/mo. thereafter</span>
 				</button>
 				<form id="myform" class="m-form">
-					<input
-						type="text"
-						name="form-firstname"
-						class="f-input m-form__input"
-						placeholder="First Name"
-						required
-					/>
-					<input
-						type="text"
-						name="form-lastname"
-						class="f-input m-form__input"
-						placeholder="Last Name"
-						required
-					/>
-					<input
-						type="email"
-						name="form-email"
-						class="f-input m-form__input"
-						placeholder="Email Address"
-						pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-						title="provide valid email"
-						required
-					/>
-					<input
-						type="password"
-						name="form-password"
-						class="f-input m-form__input"
-						placeholder="Password"
-						required
-					/>
+					<div class="m-form__input-wrapper">
+						<input
+							type="text"
+							name="form-firstname"
+							class="f-input m-form__input"
+							placeholder="First Name"
+							required
+						/>
+						<span class="m-form__error">First Name cannot be empty</span>
+					</div>
+					<div class="m-form__input-wrapper">
+						<input
+							type="text"
+							name="form-lastname"
+							class="f-input m-form__input"
+							placeholder="Last Name"
+							required
+						/>
+						<span class="m-form__error">Last Name cannot be empty</span>
+					</div>
+					<div class="m-form__input-wrapper">
+						<input
+							type="email"
+							name="form-email"
+							class="f-input m-form__input"
+							placeholder="Email Address"
+							pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+							title="provide valid email"
+							required
+						/>
+						<span class="m-form__error">Looks like this is not an email</span>
+					</div>
+					<div class="m-form__input-wrapper">
+						<input
+							type="password"
+							name="form-password"
+							class="f-input m-form__input"
+							placeholder="Password"
+							required
+						/>
+						<span class="m-form__error">Password cannot be empty</span>
+					</div>
 					<button type="submit" class="f-btn m-form__btn">
 						Claim your free trial
 					</button>

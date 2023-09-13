@@ -1,15 +1,15 @@
 .container {
 	min-width: 18.75rem;
-	padding-inline: 1.5rem;
+	--padding-var: 6%;
+	padding-inline: clamp(1.5rem, var(--padding-var), 10.3125rem);
 	padding-block: 5.5rem 4.25rem;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2rem;
-	&__top {
-		flex: 1 1 300px;
-	}
+	gap: 2rem 2.8125rem;
+	align-items: center;
+	&__top,
 	&__bottom {
-		flex: 1 1 300px;
+		flex: 1 1 100%;
 	}
 	&__title {
 		margin-bottom: 1rem;
@@ -21,5 +21,13 @@
 		margin-bottom: 1.5rem;
 	}
 }
-@media (min-width: 800px) {
+@media (min-width: 61.25rem) {
+	.container {
+		--padding-var: 12%;
+		padding-block: 7rem;
+		&__top,
+		&__bottom {
+			flex: 1 1 21.875rem;
+		}
+	}
 }
