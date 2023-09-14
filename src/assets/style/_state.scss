@@ -11,6 +11,10 @@
 		//transform: translate(0%, -50%);
 		z-index: 10;
 	}
+	& > .m-form__input {
+		border: 2px solid #ff7979;
+		color: #ff7979;
+	}
 	& > .m-form__error {
 		display: block;
 	}
