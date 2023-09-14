@@ -2,9 +2,9 @@
 	"name": "intro-component-with-signup-form-master",
 	"version": "1.0.0",
 	"description": "frontendmentor.io",
-	"main": "index.js",
+	"source": "src/index.html",
 	"scripts": {
-		"dev": "parcel src/index.html src/assets/js/script.js",
+		"dev": "parcel",
 		"build": "parcel build --no-source-maps --no-content-hash --public-url ./ --dist-dir public"
 	},
 	"author": "",

@@ -1,0 +1,1 @@
+let e=document.getElementById("form-btn"),t=document.getElementById("tryButton"),n=document.querySelectorAll(".js-form__input");e.addEventListener("click",e=>{for(let e=0;e<n.length;e++)n[e].validity.valid?n[e].parentElement.classList.remove("s-error"):n[e].parentElement.classList.add("s-error")}),t.addEventListener("click",e=>{n[0].focus()});
