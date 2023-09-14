@@ -1,7 +1,6 @@
 .container {
 	min-width: 18.75rem;
-	--padding-var: 6%;
-	padding-inline: clamp(1.5rem, var(--padding-var), 10.3125rem);
+	padding-inline: max(1.5rem, 6%);
 	padding-block: 5.5rem 4.25rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -23,7 +22,7 @@
 }
 @media (min-width: 61.25rem) {
 	.container {
-		--padding-var: 12%;
+		padding-inline: min(12%, 10.3125rem);
 		padding-block: 7rem;
 		&__top,
 		&__bottom {
